@@ -1,0 +1,223 @@
+---
+title: Tabs
+---
+
+The Tabs component allows you to create tabbed interfaces in your documentation. Users can click between tabs to view different content, making it perfect for organizing related information or showing different options.
+
+## Basic Usage
+
+<Tabs>
+      <Tab label="Installation">
+        To get started, install the package using your preferred package manager:
+
+        ```bash
+        npm install my-package
+        # or
+        yarn add my-package
+        # or
+        pnpm add my-package
+        ```
+
+        After installation, you can import and use the component in your project.
+      </Tab>
+      <Tab label="Configuration">
+        Configure the component by passing props:
+
+        ```jsx
+        import { MyComponent } from 'my-package';
+
+        function App() {
+          return (
+            <MyComponent
+              theme="dark"
+              size="large"
+            />
+          );
+        }
+        ```
+      </Tab>
+      <Tab label="Examples">
+        Here are some common usage patterns:
+
+        - **Basic usage**: Simple component instantiation
+        - **Advanced usage**: With custom configuration
+        - **Integration**: Working with other libraries
+
+        ```jsx
+        // Basic usage
+        <MyComponent />
+
+        // With options
+        <MyComponent options={{ debug: true }} />
+        ```
+      </Tab>
+    </Tabs>
+
+
+    <Tabs>
+      <Tab label="Installation">
+        To get started, install the package using your preferred package manager:
+
+        ```bash
+        npm install my-package
+        # or
+        yarn add my-package
+        # or
+        pnpm add my-package
+        ```
+
+        After installation, you can import and use the component in your project.
+      </Tab>
+      <Tab label="Configuration">
+        Configure the component by passing props:
+
+        ```jsx
+        import { MyComponent } from 'my-package';
+
+        function App() {
+          return (
+            <MyComponent
+              theme="dark"
+              size="large"
+            />
+          );
+        }
+        ```
+      </Tab>
+      <Tab label="Examples">
+        Here are some common usage patterns:
+
+        - **Basic usage**: Simple component instantiation
+        - **Advanced usage**: With custom configuration
+        - **Integration**: Working with other libraries
+
+        ```jsx
+        // Basic usage
+        <MyComponent />
+
+        // With options
+        <MyComponent options={{ debug: true }} />
+        ```
+      </Tab>
+    </Tabs>
+
+    ````mdx
+    <Tabs>
+      <Tab label="Installation">
+        To get started, install the package using your preferred package manager:
+
+        ```bash
+        npm install my-package
+        # or
+        yarn add my-package
+        # or
+        pnpm add my-package
+        ```
+
+        After installation, you can import and use the component in your project.
+      </Tab>
+      <Tab label="Configuration">
+        Configure the component by passing props:
+
+        ```jsx
+        import { MyComponent } from 'my-package';
+
+        function App() {
+          return (
+            <MyComponent
+              theme="dark"
+              size="large"
+            />
+          );
+        }
+        ```
+      </Tab>
+      <Tab label="Examples">
+        Here are some common usage patterns:
+
+        - **Basic usage**: Simple component instantiation
+        - **Advanced usage**: With custom configuration
+        - **Integration**: Working with other libraries
+
+        ```jsx
+        // Basic usage
+        <MyComponent />
+
+        // With options
+        <MyComponent options={{ debug: true }} />
+        ```
+      </Tab>
+    </Tabs>
+    ````
+
+## With Icons
+
+You can add icons to your tabs using the `icon` prop. Icons are sourced from Lucide and help make your tabs more visually distinctive.
+
+    <Tabs>
+      <Tab label="Code" icon="code">
+        You can include code examples in your tabs:
+
+        ```typescript
+        interface User {
+          id: number;
+          name: string;
+          email: string;
+        }
+
+        const users: User[] = [
+          { id: 1, name: "Alice", email: "alice@example.com" },
+          { id: 2, name: "Bob", email: "bob@example.com" }
+        ];
+        ```
+      </Tab>
+      <Tab label="Settings" icon="settings">
+        Configure your preferences:
+
+        - **Theme:** Light/Dark mode toggle
+        - **Language:** Choose your preferred language
+        - **Notifications:** Enable/disable alerts
+      </Tab>
+      <Tab label="Help" icon="help-circle">
+        Need assistance? Here are some resources:
+
+        - [Documentation](#)
+        - [Community Forum](#)
+        - [Support Email](mailto:support@example.com)
+      </Tab>
+    </Tabs>
+
+    ````mdx
+    <Tabs>
+      <Tab label="Code" icon="code">
+        You can include code examples in your tabs:
+
+        ```typescript
+        interface User {
+          id: number;
+          name: string;
+          email: string;
+        }
+
+        const users: User[] = [
+          { id: 1, name: "Alice", email: "alice@example.com" },
+          { id: 2, name: "Bob", email: "bob@example.com" }
+        ];
+        ```
+      </Tab>
+      <Tab label="Settings" icon="settings">
+        Configure your preferences:
+
+        - **Theme:** Light/Dark mode toggle
+        - **Language:** Choose your preferred language
+        - **Notifications:** Enable/disable alerts
+      </Tab>
+      <Tab label="Help" icon="help-circle">
+        Need assistance? Here are some resources:
+
+        - [Documentation](#)
+        - [Community Forum](#)
+        - [Support Email](mailto:support@example.com)
+      </Tab>
+    </Tabs>
+    ````

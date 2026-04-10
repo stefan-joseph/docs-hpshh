@@ -1,0 +1,49 @@
+---
+title: Steps
+---
+
+The Steps component allows you to create numbered step-by-step instructions in your documentation. Steps are automatically numbered based on their order in the MDX file.
+
+## Basic Usage
+
+    <Steps>
+      <Step title="First Step">
+        You can include *markdown* content **here**.
+      </Step>
+      <Step title="Second Step">
+        Formatting like tables, code, and lists:
+        <></>
+        1. One
+        <></>
+        2. Two
+      </Step>
+      <Step title="Third Step">
+        You can even include other components:
+        <Callout type="tip">
+          To prevent lists from collapsing when auto-formatting on save, try
+          using `<></>` where you want line breaks to be maintained.
+        </Callout>
+      </Step>
+    </Steps>
+
+    ```mdx
+    <Steps>
+      <Step title="First Step">
+        You can include *markdown* content **here**.
+      </Step>
+      <Step title="Second Step">
+        Formatting like tables, code, and lists:
+        <></>
+        1. One
+        <></>
+        2. Two
+      </Step>
+      <Step title="Third Step">
+        You can even include other components:
+        <Callout type="tip">
+          To prevent lists from collapsing when auto-formatting on save, try
+          using `<></>` where you want line breaks to be maintained.
+        </Callout>
+      </Step>
+    </Steps>
+    ```

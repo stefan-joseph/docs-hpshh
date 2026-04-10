@@ -1,0 +1,100 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Galaxy Burger API",
+    "description": "A sample API for managing a space-themed burger joint.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.galaxyburger.io/v1"
+    }
+  ],
+  "paths": {
+    "/burgers": {
+      "get": {
+        "summary": "List all burgers",
+        "tags": ["Menu"],
+        "parameters": [
+          {
+            "name": "planet_origin",
+            "in": "query",
+            "description": "Filter burgers by their home planet",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of burgers",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Burger"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/orders": {
+      "post": {
+        "summary": "Place a new order",
+        "tags": ["Orders"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "burger_id": {
+                    "type": "string"
+                  },
+                  "quantity": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Order created successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Burger": {
+        "type": "object",
+        "required": ["id", "name", "price"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "example": "The Supernova"
+          },
+          "price": {
+            "type": "number",
+            "format": "float",
+            "example": 12.99
+          }
+        }
+      }
+    }
+  }
+}

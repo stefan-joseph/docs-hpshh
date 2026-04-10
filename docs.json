@@ -1,0 +1,184 @@
+{
+  "title": "Banana",
+  "logo": {
+    "light": {
+      "image": "/logo/light.svg",
+      "padding": {
+        "top": 12,
+        "bottom": 10
+      }
+    },
+    "dark": {
+      "image": "/logo/dark-alt.svg",
+      "padding": {
+        "top": 13,
+        "bottom": 13.5
+      }
+    },
+    "pill": "Docs"
+  },
+  "home": "editor",
+  "navbar": {
+    "blur": true,
+    "primary": {
+      "text": "Sign up",
+      "href": "https://google.com",
+      "icon": "lucide:users-round"
+    },
+    "secondary": {
+      "text": "Get Started",
+      "href": "/getting-started/quickstart",
+      "icon": "lucide:arrow-big-right"
+    },
+    "links": [
+      {
+        "text": "Changlelog",
+        "href": "https://google.com",
+        "icon": "lucide:circle-user-round"
+      },
+      {
+        "text": "Meet the team",
+        "href": "https://google.com",
+        "icon": "lucide:users-round"
+      },
+      {
+        "text": "Meet the team",
+        "href": "https://google.com",
+        "icon": "lucide:users-round"
+      }
+    ]
+  },
+  "navigation": {
+    "menu": {
+      "type": "dropdown",
+      "label": "Select docs section",
+      "items": [
+        {
+          "label": "Documentation",
+          "icon": "lucide:square-chart-gantt",
+          "submenu": {
+            "pages": [
+              {
+                "page": "quickstart",
+                "icon": "simple-icons:apple",
+                "tag": "Try it"
+              },
+              {
+                "group": "Getting started",
+                "icon": "https://www.accessgrid.com/icon.svg",
+                "pages": [
+                  {
+                    "page": "quickstart",
+                    "icon": "simple-icons:apple",
+                    "tag": "Try it",
+                    "title": "Quick Start Guide"
+                  },
+                  {
+                    "group": "Editing",
+                    "expanded": false,
+                    "tag": "New",
+                    "icon": "lucide:pencil",
+                    "pages": [
+                      "installation",
+                      {
+                        "page": "editor",
+                        "icon": "lucide:pencil-line",
+                        "tag": "Try it"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  {
+                    "page": "writing-content/text",
+                    "icon": "lucide:type"
+                  },
+                  {
+                    "page": "writing-content/images",
+                    "icon": "lucide:image"
+                  },
+                  {
+                    "page": "writing-content/code-blocks",
+                    "icon": "lucide:code"
+                  },
+                  {
+                    "group": "Components",
+                    "icon": "lucide:component",
+                    "pages": [
+                      "writing-content/components/accordion",
+                      "writing-content/components/callout",
+                      "writing-content/components/steps",
+                      "writing-content/components/tabs"
+                    ]
+                  },
+                  {
+                    "page": "writing-content/lists",
+                    "icon": "lucide:list"
+                  },
+                  {
+                    "page": "writing-content/tables",
+                    "icon": "lucide:table"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "API Reference",
+          "icon": "lucide:square-code",
+          "submenu": {
+            "openapi": {
+              "source": "https://dev-docs.alchemy.com/alchemy/rest/prices.json"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/radiantdocs",
+      "website": "https://radiant.io",
+      "facebook": "https://facebook.com/radiantdocs",
+      "youtube": "https://youtube.com/radiantdocs",
+      "discord": "https://discord.gg/radiantdocs",
+      "slack": "https://slack.com",
+      "github": "https://github.com/radiant-docs",
+      "linkedin": "https://linkedin.com/company/radiantdocs",
+      "instagram": "https://instagram.com/radiantdocs",
+      "hacker-news": "https://news.ycombinator.com",
+      "medium": "https://medium.com",
+      "telegram": "https://t.me/radiantdocs",
+      "bluesky": "https://bsky.app",
+      "threads": "https://threads.net",
+      "reddit": "https://reddit.com",
+      "podcast": "https://podcast.com"
+    },
+    "links": [
+      {
+        "text": "Blog",
+        "href": "/blog"
+      },
+      {
+        "text": "Careers",
+        "href": "/careers"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/terms"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Cookies",
+        "href": "/cookies"
+      }
+    ]
+  }
+}
